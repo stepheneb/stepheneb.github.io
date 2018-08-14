@@ -95,7 +95,7 @@ a:visited {
     font-style: italic;
     margin: 0em; }
 
-.location {
+.location, .client {
   color: #5f5f5f;
   font-family: 'Lato', georgia, times, "times new roman", serif;
   font-weight: 600;
