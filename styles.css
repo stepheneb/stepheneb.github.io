@@ -65,6 +65,9 @@ body {
   #header > p.github {
     font-size: 1.1em;
     margin: 0.5em; }
+  #header > p.lmts {
+    font-size: 1.1em;
+    margin: 0.5em; }
 
 a:link {
   color: #3f3fcf; }
