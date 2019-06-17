@@ -155,3 +155,18 @@ li {
 
 code {
 font-size: 0.95em; }
+
+@media print {
+  @page {
+    margin: 1.0cm 1.4cm;
+  }
+  body {
+    font-size: 10pt;
+    max-width: unset;
+  }
+  hr.print-page-break {
+    color: #fff;
+    page-break-before: always;
+    break-before: always;
+  }
+}

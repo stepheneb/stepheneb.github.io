@@ -6,7 +6,7 @@
   <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
   <title>Stephen Bannasch: Resume</title>
   <link href='//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,400,400italic,700' rel='stylesheet' type='text/css'>
-  <link href='styles.css' rel='stylesheet' type='text/css'>
+  <link href='styles.css' rel='stylesheet' type='text/css' media="screen, print">
 </head>
 
 <body>
@@ -89,7 +89,7 @@
       </ul>
     </div>
 
-    <hr />
+    <hr class="print-page-break" />
     <h2>Professional Experience</h2>
     <div class="section">
 
@@ -216,44 +216,53 @@
     </div>
 
     <hr />
-    <h2 id="publications">Publications</h2>
+    <h2>Independent projects</h2>
     <div class="section">
-      <p>Bannasch, S. (2010). <a href="http://concord.org/publications/newsletter/2010-fall/innovator-interview">
-          Innovator interview: Stephen Bannasch</a>. @Concord, 14(2). The Concord Consortium. </p>
 
-      <p>Staudt C., & Bannasch S., <a href="http://concord.org/sites/default/files/newsletters/2006/fall/at-concord-fall-2006.pdf">
-          Using sensors and models to answer discovery questions</a>. (2006). @Concord, 10 (2). The Concord Consortium.</p>
+      <div class="location">CMDA320: TransMedia Projects: Montclair State University, Spring 2015</div>
+      <div class="title">Consultant working with professor Beverly Peterson's Transmedia class.</div>
+      <p>
+        Adapted mapping and video code from Cosmopolis: 49 Waltzes for the World project to create map
+        of Orange NJ with clickable hotspots showing video and audio narratives:
+        <a href="http://stepheneb.github.io/simple-orange-map/">stepheneb.github.io/simple-orange-map</a>.
+      </p>
 
-      <p>Tinker R., Bannasch S., <a href="http://concord.org/sites/default/files/newsletters/2005/spring/at-concord-spring-2005.pdf">
-          Future technology in unexpected places</a>. (2005). @Concord, 9(1). The Concord Consortium.</p>
 
-      <p>Bannasch, S. (2002). <a href="http://concord.org/sites/default/files/newsletters/2002/fall/at-concord-fall-2002.pdf">
-          Probing the unseen world: Advanced probe captures subtle changes in temperature</a>. @Concord, 6(2). The Concord Consortium.</p>
-
-      <p>Bannasch, S., & Tinker, R. (2002). <a href="http://concord.org/sites/default/files/newsletters/2002/winter/at-concord-winter-2002.pdf">
-          Probeware takes a seat in the classroom:Educational impact of probes improves with time and innovation</a>.@Concord, 6(1). The Concord Consortium.</p>
-
-      <p>Bannasch, S. (2001). <a href="https://concord.org/wp-content/uploads/2016/12/newsletters/2001/spring/at-concord-spring-2001.pdf">
-          Wireless Computers and Probeware Support a New Science Curriculum: Using iPAQ Pocket PCs to study science fundamentals
-        </a>. @Concord, 5(1). The Concord Consortium.</p>
-
-      <p>Bannasch S. (2001). <a href="http://link.springer.com/chapter/10.1007/978-94-010-0638-5_7">
-          Educational Innovations in Portable Technology</a>. In Tinker R., & Krajcik, J. (eds.), Portable Technologies: Science Learning in Context (121-141). Kluwer Academic/Plenum Publishers</p>
-
-      <p>Bannasch, S. (2000). <a href="http://concord.org/sites/default/files/newsletters/2000/fall/at-concord-fall-2000.pdf">
-          Beam me up, Scottie! Handheld computers extend the range of wireless communication in schools</a>. @Concord, 4(3). The Concord Consortium.</p>
-
-      <p>Bannasch, S. (1999). <a href="http://concord.org/sites/default/files/newsletters/1999/fall/at-concord-fall-1999.pdf">
-          The electronic curator: Using a handheld computer at the Exploratorium</a>. @Concord, 3(3). The Concord Consortium.</p>
-
-      <p>Bannasch, S. (1998). <a href="http://concord.org/sites/default/files/newsletters/1998/spring/at-concord-spring-1998.pdf">
-          Making smarter probes</a>. @Concord, 2(2). The Concord Consortium. </p>
-
-      <p>Bannasch S., & Berenfeld B. (1996). <a href="http://link.springer.com/book/10.1007/978-3-642-61189-6">
-          Global Lab: From Classroom Labs to Real-World Research Labs</a>. In Tinker B., Microcomputer-based Labs Educational Research and Standards (247-258). Springer-Verlag New York, Inc.</p>
+      <div class="location">Cosmopolis: 49 Waltzes for the World, Fall 2013</div>
+      <a href="http://bacnyc.org/performances/performance/cosmopolis">http://bacnyc.org/performances/performance/cosmopolis</a>
+      <div class="title">Architect, and Programmer.</div>
+      <p>
+        Code: <a href="https://github.com/stepheneb/49waltzes-detroit">github.com/stepheneb/49waltzes-detroit</a>
+        and <a href="https://github.com/stepheneb/detroit-interviews">github.com/stepheneb/detroit-interviews</a>
+      </p>
+      <p>
+        Architected and implemented the software for NYC-based video artists Roberta Friedman and
+        Daniel Loewenthal's interactive video installation. Roberta and Dan shot short videos at
+        147 different locations in Detroit. The installation has a map of Detroit displayed on a
+        large touch screen monitor. Tapping the map brings up the closest video in a separate monitor.
+        Visible hotspots on the map representing viewed location slowly fade out over time. Implemented using
+        browser technology and WebVTT for Spanish subtitling.
+      </p>
     </div>
 
     <hr />
+    <h2>Education</h2>
+    <div class="section">
+      <div class="location">Hampshire College; BA 1982</div>
+      <p>
+        Thesis Project: Monitoring and Analysis of an Experimental Passive Solar Envelope House.
+      </p>
+      <p>
+        Implemented a microcomputer-based monitoring system for measuring the performance of an experimental
+        passive solar 'envelope' house built in Leverett MA. Extended a small single board computer (KIM-1)
+        with an analog interface for measuring multiple temperature sensors and solar insolation using a pyranometer
+        installed on the peak of the roof. The single-board computer saved sensor data every 15 minutes on magnetic
+        tape. programs on the Apple II in BASIC and machine language to do solar performance analyses
+        of the house and display and print graphs.
+      </p>
+    </div>
+
+    <hr class="print-page-break" />
     <h2>Software Technical Skills</h2>
     <div class="section">
 
@@ -455,6 +464,19 @@
       </p>
     </div>
 
+    <hr class="print-page-break" />
+    <h2>Contributions to external open source projects</h2>
+    <div class="section">
+      <p>
+        Over 200 commits to more than 50 external open source projects. Projects include:
+        JRuby (Java implementation of Ruby), Rails framework and 30 more Ruby gems,
+        12 JavaScript projects and a number of miscellaneous projects.
+      </p>
+      <p>
+        For more detail: <a href="http://stepheneb.github.io/open-source-contributions.html">open-source-contributions.html</a>
+      </p>
+    </div>
+
     <hr />
     <h2>Hardware technical skills</h2>
     <div class="section">
@@ -469,19 +491,6 @@
     </div>
 
     <hr />
-    <h2>Contributions to external open source projects</h2>
-    <div class="section">
-      <p>
-        Over 200 commits to more than 50 external open source projects. Projects include:
-        JRuby (Java implementation of Ruby), Rails framework and 30 more Ruby gems,
-        12 JavaScript projects and a number of miscellaneous projects.
-      </p>
-      <p>
-        For more detail: <a href="http://stepheneb.github.io/open-source-contributions.html">open-source-contributions.html</a>
-      </p>
-    </div>
-
-    <hr />
     <h2>Teaching experience</h2>
     <div class="section">
       <div class="location">Lesley College, Cambridge, MA, 1983-1984.</div>
@@ -492,78 +501,44 @@
     </div>
 
     <hr />
-    <h2>Older independent projects</h2>
+    <h2 id="publications">Publications</h2>
     <div class="section">
+      <p>Bannasch, S. (2010). <a href="http://concord.org/publications/newsletter/2010-fall/innovator-interview">
+          Innovator interview: Stephen Bannasch</a>. @Concord, 14(2). The Concord Consortium. </p>
 
-      <div class="location">CMDA320: TransMedia Projects: Montclair State University, Spring 2015</div>
-      <div class="title">Consultant working with professor Beverly Peterson's Transmedia class.</div>
-      <p>
-        Adapted mapping and video code from Cosmopolis: 49 Waltzes for the World project to create map
-        of Orange NJ with clickable hotspots showing video and audio narratives:
-        <a href="http://stepheneb.github.io/simple-orange-map/">stepheneb.github.io/simple-orange-map</a>.
-      </p>
+      <p>Staudt C., & Bannasch S., <a href="http://concord.org/sites/default/files/newsletters/2006/fall/at-concord-fall-2006.pdf">
+          Using sensors and models to answer discovery questions</a>. (2006). @Concord, 10 (2). The Concord Consortium.</p>
 
+      <p>Tinker R., Bannasch S., <a href="http://concord.org/sites/default/files/newsletters/2005/spring/at-concord-spring-2005.pdf">
+          Future technology in unexpected places</a>. (2005). @Concord, 9(1). The Concord Consortium.</p>
 
-      <div class="location">Cosmopolis: 49 Waltzes for the World, Fall 2013</div>
-      <a href="http://bacnyc.org/performances/performance/cosmopolis">http://bacnyc.org/performances/performance/cosmopolis</a>
-      <div class="title">Architect, and Programmer.</div>
-      <p>
-        Code: <a href="https://github.com/stepheneb/49waltzes-detroit">github.com/stepheneb/49waltzes-detroit</a>
-        and <a href="https://github.com/stepheneb/detroit-interviews">github.com/stepheneb/detroit-interviews</a>
-      </p>
-      <p>
-        Architected and implemented the software for NYC-based video artists Roberta Friedman and
-        Daniel Loewenthal's interactive video installation. Roberta and Dan shot short videos at
-        147 different locations in Detroit. The installation has a map of Detroit displayed on a
-        large touch screen monitor. Tapping the map brings up the closest video in a separate monitor.
-        Visible hotspots on the map representing viewed location slowly fade out over time. Implemented using
-        browser technology and WebVTT for Spanish subtitling.
-      </p>
+      <p>Bannasch, S. (2002). <a href="http://concord.org/sites/default/files/newsletters/2002/fall/at-concord-fall-2002.pdf">
+          Probing the unseen world: Advanced probe captures subtle changes in temperature</a>. @Concord, 6(2). The Concord Consortium.</p>
 
-      <div class="location">The Erl King, 1986</div>
-      <a href="http://www.guggenheim.org/new-york/membership/photo-gallery/album/674/414">http://www.guggenheim.org/new-york/membership/photo-gallery/album/674/414</a>
-      <div class="title">Programmer.</div>
-      <p>
-        Worked with NYC-based video artists Graham Weinbren and Roberta Friedman to complete the design
-        and programming of the editing and run-time software for an interactive video art
-        piece in which viewers explore non-linear narratives by touching areas on the video screen.
-        The run-time software controls the queuing and playing of video and audio from three videodisk
-        players as well as reading viewer input from the touch screen. The editing software was
-        designed to enable the film maker to easily specify the non-linear interactions. The software
-        was written in Pascal and Z80 assembly language.
-        12/86-2/87 Museum of Contemporary Art, Los Angeles,CA;
-        4/87-7/87 Whitney Museum of American Art, New York, NY.
-      </p>
+      <p>Bannasch, S., & Tinker, R. (2002). <a href="http://concord.org/sites/default/files/newsletters/2002/winter/at-concord-winter-2002.pdf">
+          Probeware takes a seat in the classroom:Educational impact of probes improves with time and innovation</a>.@Concord, 6(1). The Concord Consortium.</p>
 
-      <div class="location">Video Write, 1987</div>
-      <div class="title">Creator/Programmer.</div>
-      <p>
-        Design and programming of educational software which integrates a prompted editor with a
-        videodisk display system for the Apple//e. Written entirely in 6502 assembly language.
-        Done for and distributed by SERESC Inc., 11 Peabody Rd., Derry, NH 03038.
-      </p>
+      <p>Bannasch, S. (2001). <a href="https://concord.org/wp-content/uploads/2016/12/newsletters/2001/spring/at-concord-spring-2001.pdf">
+          Wireless Computers and Probeware Support a New Science Curriculum: Using iPAQ Pocket PCs to study science fundamentals
+        </a>. @Concord, 5(1). The Concord Consortium.</p>
+
+      <p>Bannasch S. (2001). <a href="http://link.springer.com/chapter/10.1007/978-94-010-0638-5_7">
+          Educational Innovations in Portable Technology</a>. In Tinker R., & Krajcik, J. (eds.), Portable Technologies: Science Learning in Context (121-141). Kluwer Academic/Plenum Publishers</p>
+
+      <p>Bannasch, S. (2000). <a href="http://concord.org/sites/default/files/newsletters/2000/fall/at-concord-fall-2000.pdf">
+          Beam me up, Scottie! Handheld computers extend the range of wireless communication in schools</a>. @Concord, 4(3). The Concord Consortium.</p>
+
+      <p>Bannasch, S. (1999). <a href="http://concord.org/sites/default/files/newsletters/1999/fall/at-concord-fall-1999.pdf">
+          The electronic curator: Using a handheld computer at the Exploratorium</a>. @Concord, 3(3). The Concord Consortium.</p>
+
+      <p>Bannasch, S. (1998). <a href="http://concord.org/sites/default/files/newsletters/1998/spring/at-concord-spring-1998.pdf">
+          Making smarter probes</a>. @Concord, 2(2). The Concord Consortium. </p>
+
+      <p>Bannasch S., & Berenfeld B. (1996). <a href="http://link.springer.com/book/10.1007/978-3-642-61189-6">
+          Global Lab: From Classroom Labs to Real-World Research Labs</a>. In Tinker B., Microcomputer-based Labs Educational Research and Standards (247-258). Springer-Verlag New York, Inc.</p>
     </div>
-
-    <hr />
-    <h2>Education</h2>
-    <div class="section">
-      <div class="location">Hampshire College; BA 1982</div>
-      <p>
-        Thesis Project: Monitoring and Analysis of an Experimental Passive Solar Envelope House.
-      </p>
-      <p>
-        Implemented a microcomputer-based monitoring system for measuring the performance of an experimental
-        passive solar 'envelope' house built in Leverett MA. Extended a small single board computer (KIM-1)
-        with an analog interface for measuring multiple temperature sensors and solar insolation using a pyranometer
-        installed on the peak of the roof. The single-board computer saved sensor data every 15 minutes on magnetic
-        tape. Brought the magenetic tapes back to Hampshire and read the stored data using an Apple II
-        computer. Wrote programs on the Apple II in BASIC and machine language to do solar performance analyses
-        of the house and display and print graphs. Finished writing thesis on the IMSAI 8080 running CPM in
-        the basement of the library using Emacs and saving the work on 8" floppies.
-      </p>
-    </div>
-
   </div>
+
 </body>
 
 </html>
