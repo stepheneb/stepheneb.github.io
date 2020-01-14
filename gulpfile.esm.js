@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import cp from 'child_process';
@@ -16,13 +18,12 @@ function serve(done) {
 
 function pdf(done) {
   cp.exec(
-    'osascript ./scripts/save-pdf-file.scpt \"`pwd`/resume.html" "`pwd`\"'
-    ,done
+    'rm -f "`pwd`/resume.pdf"; osascript ./scripts/save-pdf-file.scpt \"`pwd`/resume.html" "`pwd`\"', done
   );
 }
 pdf.description = 'Generate a PDF of the resume page using applescript and Safari';
 
-const watch = () => gulp.watch("*.html", reload);
+const watch = () => gulp.watch(["*.html", "*.css"], reload);
 
 const dev = gulp.series(serve, watch);
 dev.description = 'Start server and use browsersync to watch files and update pages.';
