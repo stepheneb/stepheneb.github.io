@@ -113,17 +113,45 @@ a:visited {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0 2em 0 0.5em;
+  margin: 0.4rem 0rem 0.4rem 0.0rem;
+}
+
+ul.details {
+  font-size: 95%;
+  margin: 0.4rem 0rem 0.4rem 0.0rem;
+}
+
+li::before {
+  content: "\25fc";
+  color: rgba(128,128,128,0.7);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1.2rem;
+}
+
+li {
+  margin: 0.4rem 0rem 0.4rem 1rem;
+}
+
+#content li p {
+  margin-left: 0.5em;
+}
+
 .section {
   margin: 0.2em 0em 0.8em 0.5em;
 }
 
 .item, .client {
+  display: inline-block;
   font-family: 'Lato', georgia, times, "times new roman", serif;
   font-weight: 600;
   font-size: 1.0em;
   font-style: normal;
   letter-spacing: 0.02em;
-  margin: 1em 0em 0.5em 0.0em;
+  margin: 0.5em 0em 0.2em 0.0em;
 }
 
 .client > a, .item > a {
@@ -185,28 +213,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0.5em;
-}
-
-ul.details {
-  font-size: 95%;
-  margin: 0.4em 0em 0.4em 0.0em;
-}
-
-li::before {
-  content: "\25CB";
-  color: rgba(128,128,128,0.7);
-  display: inline-block;
-  width: 1.0em;
-  margin-left: -1em;
-}
-
-li {
-  margin: 0.4em 0em 0.4em 0.8em;
-}
-
 code {
   font-size: 0.95em;
 }
@@ -224,12 +230,13 @@ div.screenshot > img {
 div.screenshot > p {
   text-align: center;
   font-size: 90%;
+  font-style: italic;
 }
 
 @media print {
   @page {
     size: auto;
-    margin: 15mm 25mm 15mm 20mm;
+    margin: 15mm 20mm 15mm 20mm;
   }
 
   body {
@@ -257,6 +264,11 @@ div.screenshot > p {
     line-height: 140%;
   }
 
+  #content hr {
+    margin: 0.8em 0;
+    padding: 0;
+  }
+
   #content hr.print-page-break {
     page-break-before: always;
     break-before: always;
@@ -278,6 +290,10 @@ div.screenshot > p {
 
   a:link.item {
     padding-left: 0.4em;
+  }
+
+  li::before {
+    color: LightGray;
   }
 
 }
