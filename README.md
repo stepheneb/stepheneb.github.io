@@ -46,6 +46,23 @@ To re-generate resume.pdf after making changes:
     $ npm install
 ```
 
+
+**Broadcasting with ZeroConf/Bonjour**
+
+After localserver is started on port 3000 start up `dns-sd`.
+
+```
+$ dns-sd -P stepheneb _http._tcp . 3000 stepheneb.local `hostname`
+Registering Service stepheneb._http._tcp host stepheneb.local port 3000
+DATE: ---Tue 14 Jan 2020---
+12:32:59.162  ...STARTING...
+12:32:59.900  Got a reply for record stepheneb.local: Name now registered and active
+12:32:59.900  Got a reply for service stepheneb._http._tcp.local.: Name now registered and active
+```
+
+Now other devices on local-area network with zeroconf/bonjour capability can connect
+at this url: http://stepheneb.local:3000
+
 **References**
 
 1. Node.js
