@@ -19,6 +19,7 @@
         Resume: <a href="resume.html">stepheneb.github.io/resume.html</a>
       </p>
     </div>
+
     <div id='content'>
       <hr/>
       <h2>Expertise</h2>
@@ -54,7 +55,123 @@
       </div>
 
       <h2>Clients</h2>
-      <div class="section">
+
+      <!-- RLMG -->
+      <div id='rlmg' class="section">
+        <div class="client">
+          Richard Lewis Media Group, Watertown MA, 2019-2022
+          <a href="https://rlmg.com/">rlmg.com</a>
+        </div>
+        <p>Three projects.</p>
+        <div class='project'>
+          <header>Electron-based kiosk application for interacting with NASA images, 2019-2022</header>
+          <p>
+          </p>
+          <ul class="details">
+            <li>
+              Repository: <a href="https://github.com/stepheneb/cfa-own-electron">github.com/stepheneb/cfa-own-electron</a>
+            </li>
+            <li>
+              Web demo: <a href="https://stepheneb.github.io/cfa-own-electron">stepheneb.github.io/cfa-own-electron</a>
+            </li>
+            <li>
+              Releases: <a href="https://github.com/stepheneb/cfa-own-electron/releases">github.com/stepheneb/cfa-own-electron/releases</a>
+            </li>
+          </ul>
+          <div class="screenshot">
+            <img  src="images/cfa.jpg">
+          </div>
+        </div>
+        <div class='project'>
+          <header>Thoreau's World for the Concord Museum, 2021-2022</header>
+          <p>
+            Created <a href="https://thoreausworld.com/">thoreausworld.com</a>, a web site for displaying Thoreau
+            artifacts held by the Concord Museum: <a href="https://concordmuseum.org/">concordmuseum.org</a> 
+            with interactive elemenst inspired by NYT articles with embedded visualzationa..
+          </p>
+          <ul class="details">
+            <li>
+              Repository: <a href="https://github.com/stepheneb/thoreau-microsite">github.com/stepheneb/thoreau-microsite</a>
+            </li>
+          </ul>
+          <div class="screenshot">
+            <img  src="images/thoreausworld.jpg">
+          </div>
+        </div>
+
+        <div class='project'>
+          <header>Extracted membership data from a complex denormalized dump into clean SQL, 2021-2022</header>
+          <p>
+            Developed an extensive Rails v6.1 application to extract membership data from a large complex
+            denormalized CSV dump. We did not have access to thee original database. Rails was used to re-create
+            a new set of SQL models and extract data from the CSV dump. In addition used the Google Map API
+            to generate location data for member sites.
+          </p>
+          <ul class="details">
+            <li>
+              Repository: project is in a private repository.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- M2 Thermal Solutions, 2020-2021 -->
+      <div id='m2thermal' class="section">
+        <div class="client">
+          M2 Thermal Solutions, 2020-2021
+          <a href="https://globalcoolingprize.org/m2-thermal-solutions/">globalcoolingprize.org/m2-thermal-solutions</a>
+        </div>
+        <p>
+          Worked with the CTO to assemble and program a prototype Arduino-based controiller for an experimental
+          cooling solution that used a combination of evaporative cooling and membrane technologies to independently
+          cool and remove moisture from room air. The device was a finalist in the Global Cooling Prize competition
+          <a href="https://globalcoolingprize.org/about-the-finalists/">globalcoolingprize.org/about-the-finalists</a>
+        </p>
+
+        <header>Arduino Mega 2560 Controller Details</header>
+        <p>
+          Created an extensive menu-driven controller test program to read and control the following inputs and outputs.
+        </p>
+        <ul class="details">
+          <li>
+             ERE I2C-AI418S II2C ADC for measuring 4-20mA signals from
+             three Dwyer pressure sensors and an EchoPod ultrasonic fluid level sensor.
+          </li>
+          <li>
+            AdaFruit TCA9548A 1-to-8 I2C multiplexer for measuring five Sensirion SCC30 Temperature/Humidity Sensors.
+          </li>
+          <li>
+            Adafruit MCP9600 I2C Thermocouple Amplifier for measuring temnperature of a cartridge fluid heater.
+          </li>
+          <li>
+            Adafruit MCP4725 I2C 12-Bit DAC and an opamp circuit for generating
+            a 0-10V analog output to drive a Johnson proportional control valve.
+          </li>
+          <li>
+            Controlled speed and direction of two larger fans using ClearPath-MCVC mode servo smart motors.
+          </li>
+          <li>
+            Controlled speed of two San Ace 140 fans with custom Arduino coding of a 25 KHz PWM.
+          </li>
+          <li>
+            Arduino 10-bit analog inputs for measuring three Amphenol GE-2153 thermistors.
+          </li>
+          <li>
+            Six digital relay outputs for controlling pumps, valves, and heaters.
+          </li>
+          <li>
+            Float switch digital input.
+          </li>
+          <li>
+            Designed a 24V power mosfet circuit along with custom Arduino coding to control
+            a Burket proportional control valve.
+          </li>
+        </ul>
+      </div>
+
+      <!-- S9  -->
+      <div id='s9' class="section">
         <div class="client">
           S9, Kirkland, WA, 2019-2020
           <a href="http://www.soundnine.com/">soundnine.com</a>
@@ -97,8 +214,8 @@
         </div>
       </div>
 
-
-      <div class="section">
+      <!-- TechnoFrolics -->
+      <div id='technofrolics' class="section">
         <div class="client">
           TechnoFrolics, Somerville, MA, 2018-2020
           <a href="http://www.technofrolics.com/">technofrolics.com</a>
@@ -118,7 +235,8 @@
         </p>
       </div>
 
-      <div class="section">
+      <!-- Sightlines -->
+      <div id='sightlines' class="section">
         <div class="client">
           Sightlines Group, Brooklyn, NY, 2019-2020
           <a href="https://sightlinesgroup.com/">sightlinesgroup.com</a>
@@ -148,7 +266,8 @@
           </li>
       </div>
 
-      <div class="section">
+      <!-- Maverick and Boutique -->
+      <div id='maverick-and-boutique' class="section">
         <div class="client">
           Maverick and Boutique, Ashfield MA, 2016-2019
           <a href="http://maverickandboutique.com/">maverickandboutique.com</a>
