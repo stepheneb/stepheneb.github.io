@@ -12,6 +12,7 @@
     <div id="header">
       <h1>Art & Logic</h1>
       <h2>Web, desktop, and mobile application development.</h2>
+      <h2>Raspberry Pi and Arduino software and hardware development.</h2>
       <p class="lmts">Stephen Bannasch, 106 Sand Hill Road, Shutesbury MA 01072, 413 259 9125</p>
       <p class="lmts">email: <a href="mailto:stephen.bannasch@gmail.com&subject=">stephen.bannasch@gmail.com</a></p>
       <p class="lmts">
@@ -59,13 +60,47 @@
       <!-- RLMG -->
       <div id='rlmg' class="section">
         <div class="client">
-          Richard Lewis Media Group, Watertown MA, 2019-2022
+          RLMG (Richard Lewis Media Group), Watertown MA, 2019-2022
           <a href="https://rlmg.com/">rlmg.com</a>
         </div>
-        <p>Three projects.</p>
+        <div class='project'>
+          <header>Thoreau's World for the Concord Museum, 2021-2022</header>
+          <p>
+            Created <a href="https://thoreausworld.com/">thoreausworld.com</a>, a web site for displaying Thoreau
+            artifacts held by the Concord Museum: <a href="https://concordmuseum.org/">concordmuseum.org</a> 
+            with interactive elements inspired by NYT articles with embedded visualzationa..
+          </p>
+          <ul class="details">
+            <li>
+              Repository: <a href="https://github.com/stepheneb/thoreau-microsite">github.com/stepheneb/thoreau-microsite</a>
+            </li>
+          </ul>
+          <div class="screenshot">
+            <img  src="images/thoreausworld.jpg">
+          </div>
+        </div>
+
+        <div class='project'>
+          <header>Extracted membership data from a complex denormalized CSV dump into clean SQL, 2021-2022</header>
+          <p>
+            Developed an Rails v6.1 application to extract complex membership data from a large
+            denormalized CSV dump. We did not have access to thee original database. Rails was used to re-create
+            a new set of SQL models and extract data from the CSV dump. In addition used the Google Map API
+            to generate location data for member sites.
+          </p>
+          <ul class="details">
+            <li>
+              Repository: project is in a private repository.
+            </li>
+          </ul>
+        </div>
+
         <div class='project'>
           <header>Electron-based kiosk application for interacting with NASA images, 2019-2022</header>
           <p>
+            Worked with a designer at RLMG and content experts and a systems programmer at the Harvard Center for Astrophysics
+            to create an Electron application for exploring and interacting with astronomical images taken by a wide
+            range of NASA telescopes. The application is integrated with a large touchsxcreen into a kiosk for science museums.
           </p>
           <ul class="details">
             <li>
@@ -82,37 +117,6 @@
             <img  src="images/cfa.jpg">
           </div>
         </div>
-        <div class='project'>
-          <header>Thoreau's World for the Concord Museum, 2021-2022</header>
-          <p>
-            Created <a href="https://thoreausworld.com/">thoreausworld.com</a>, a web site for displaying Thoreau
-            artifacts held by the Concord Museum: <a href="https://concordmuseum.org/">concordmuseum.org</a> 
-            with interactive elemenst inspired by NYT articles with embedded visualzationa..
-          </p>
-          <ul class="details">
-            <li>
-              Repository: <a href="https://github.com/stepheneb/thoreau-microsite">github.com/stepheneb/thoreau-microsite</a>
-            </li>
-          </ul>
-          <div class="screenshot">
-            <img  src="images/thoreausworld.jpg">
-          </div>
-        </div>
-
-        <div class='project'>
-          <header>Extracted membership data from a complex denormalized dump into clean SQL, 2021-2022</header>
-          <p>
-            Developed an extensive Rails v6.1 application to extract membership data from a large complex
-            denormalized CSV dump. We did not have access to thee original database. Rails was used to re-create
-            a new set of SQL models and extract data from the CSV dump. In addition used the Google Map API
-            to generate location data for member sites.
-          </p>
-          <ul class="details">
-            <li>
-              Repository: project is in a private repository.
-            </li>
-          </ul>
-        </div>
 
       </div>
 
@@ -124,11 +128,15 @@
         </div>
         <p>
           Worked with the CTO to assemble and program a prototype Arduino-based controiller for an experimental
-          cooling solution that used a combination of evaporative cooling and membrane technologies to independently
+          cooling device that used a combination of evaporative cooling and membrane technologies to independently
           cool and remove moisture from room air. The device was a finalist in the Global Cooling Prize competition
           <a href="https://globalcoolingprize.org/about-the-finalists/">globalcoolingprize.org/about-the-finalists</a>
         </p>
-
+        <ul class="details">
+          <li>
+            Repository: project is in a private repository.
+          </li>
+        </ul>
         <header>Arduino Mega 2560 Controller Details</header>
         <p>
           Created an extensive menu-driven controller test program to read and control the following inputs and outputs.
@@ -199,7 +207,7 @@
             Transparent icon buttons for zooming in, zooming out, and resetting graph axes.
           </li>
           <li>
-            Plot can be printed, saved to a png file, and copied intothe system clipboard.
+            Plot can be printed, saved to a png file, and copied into the system clipboard.
           </li>
           <li>
             Developed in Swing using TDD practices in NetBeans 11.2 and JDK13.
@@ -228,31 +236,42 @@
 
         <div class='project'>
           <header>Raspberry Pi project involving video playback and digital I/O, 2020</header>
-          <p>
-            More description needed ...
-          </p>
+          <ul class="details">
+            <li>
+              Integrated omxplayer to control playback of m4v video stream.
+            </li>
+            <li>
+              Digital input for user interaction.
+            </li>
+          </ul>
         </div>
 
         <div class='project'>
-          <header>Prototype Electron application for dynamic display of remote application events, 2020</header>
-          <p>
-            More description needed ...
-          </p>
+          <header>Prototype Electron application for dynamic visualization of remote application events, 2020</header>
+          <ul class="details">
+            <li>
+              Implemented C++ module and JavaScript NPM package libraries for easily streaming
+              structured application events over WebSocket sessions.
+            </li>
+            <li>
+              ELectron application receives stream of events over WebSocket and renders a dynamic visualization.
+            </li>
+          </ul>
         </div>
 
         <div class='project'>
           <header>Prototype networked virtual reality communication and scene-building, 2018-2019</header>
-        <p>
-          Created prototype applications in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>
-          and <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin.Forms</a>
-          for networked virtual reality communication and scene-building.
-        </p>
+          <p>
+            Created prototype applications in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>
+            and <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin.Forms</a>
+            for networked virtual reality communication and scene-building/modification in Unity.
+          </p>
           <ul class="details">
             <li>
               Conversion of original project to integrate with Visual Studio and msbuild development environments.
             </li>
             <li>
-              Create Macos and Windows Xamarin-based GUI streamer applications
+              Create Macos and Windows Xamarin-based GUI applications for generating streaming events.
             </li>
           </ul>
         </div>

@@ -99,6 +99,9 @@ header {
 #header > h1 {
   margin: 0.4rem;
 }
+#header > h2 {
+  margin: 0.3rem;
+}
 #header > p {
   font-size: 0.95rem;
   margin: 0.5rem;
