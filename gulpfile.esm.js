@@ -18,7 +18,7 @@ function serve(done) {
 
 function pdf(done) {
   cp.exec(
-    'rm -f "`pwd`/resume.pdf"; osascript ./scripts/save-pdf-file.scpt \"`pwd`/resume.html" "`pwd`\"', done
+    'rm -f "`pwd`/stephen-bannasch-resume.pdf"; osascript ./scripts/save-pdf-file.scpt \"`pwd`/resume.html" "`pwd`\"', done
   );
 }
 pdf.description = 'Generate a PDF of the resume page using applescript and Safari';

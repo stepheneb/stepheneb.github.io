@@ -115,6 +115,32 @@ header {
   margin: 0.5rem;
 }
 
+#header > div.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: left;
+}
+
+#header > div.list > ul {
+  font-size: 0.94rem;
+  margin-left: 3.5rem;
+}
+
+#header > div.list > ul > li:before {
+    content: "";
+    color: rgba(128,128,128,0.7);
+    display: inline-block;
+    width: 0.6rem;
+    padding-right: 0.5rem;
+}
+
+#header > div.list > ul > li > a {
+  margin-left: 0.2rem;
+}
+
 a:link {
   color: #3f3fcf;
 }
