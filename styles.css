@@ -83,7 +83,7 @@ body {
   display: block;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0;
 }
 
@@ -129,19 +129,40 @@ header {
   font-size: 0.92rem;
   margin-top: -0.1rem;
   margin-left: 3.2rem;
-  width: unset;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex: inherit;
+  list-style: none;
 }
 
-#header > div.list > ul > li:before {
-    content: "";
-    color: rgba(128,128,128,0.7);
-    display: inline-block;
-    width: 0.6rem;
-    padding-right: 0.5rem;
+#header > div.list > ul > li {
+  margin: 0.4rem 0.1rem 0.4rem 0rem;
+}
+
+#header > div.list > ul > li:not(:first-child):not(:last-child) {
+  margin-right: 0.1rem;
+}
+
+#header > div.list > ul > li:not(:first-child):not(:last-child)::after {
+  margin-left: -0.1rem;
+  content: ',';
+}
+
+#header > div.list > ul > li.label {
+  font-weight: 600;
 }
 
 #header > div.list > ul > li > a {
   margin-left: 0.2rem;
+}
+
+#header > div.list.resume > ul > li.resume {
+  display: none;
+}
+
+.print-only {
+  display: none;
 }
 
 a:link {
@@ -155,36 +176,19 @@ a:visited {
 ul {
   width: 90%;
   font-size: 0.95rem;
-  list-style-type: none;
+  list-style: '\25B8\2002' outside;
   padding: 0 1rem 0 0rem;
   margin: 0.4rem 0rem 0.4rem 0.0rem;
 }
 
-.with-marker {
-  list-style: square outside;
+ul ::marker {
+  color: rgba(128,128,128,0.7);
+  font-size: 100%;
 }
-
-.with-marker ::marker {
-  color: rgba(128,128,128,0.7);;
-  font-size: 150%;
-}
-
-.with-marker > li:before {
-  display: none;
-}
-
 
 ul.details {
   font-size: 0.9rem;
   margin: 0.4rem 0rem 0.4rem 0.0rem;
-}
-
-li::before {
-  content: "+";
-  color: rgba(128,128,128,0.7);
-  display: inline-block;
-  width: 0.8rem;
-  margin-left: -0.9rem;
 }
 
 li {
@@ -196,7 +200,7 @@ li {
 }
 
 .section {
-  margin: 0.8rem 0rem 0.8rem 0.5rem;
+  margin: 0.4rem 0rem 0.8rem 0.5rem;
 }
 
 .project {
@@ -217,7 +221,7 @@ li {
   font-family: 'Lato', georgia, times, "times new roman", serif;
   font-style: normal;
   letter-spacing: 0.02rem;
-  padding-left: 0.4rem;
+  padding-left: 0.1rem;
 }
 
 
@@ -328,16 +332,8 @@ div.screenshot > p {
   }
 
   ul.details {
-    font-size: 0.80rem;
+    font-size: 0.9rem;
     margin: 0.4rem 0rem 0.4rem 0.0rem;
-  }
-
-  li::before {
-    content: "\25fc";
-    color: rgba(128,128,128,0.7);
-    display: inline-block;
-    width: 1rem;
-    padding-right: 0.5rem;
   }
 
   li {
@@ -398,15 +394,19 @@ div.screenshot > p {
 @media print {
   @page {
     size: auto;
-    margin: 15mm 20mm 15mm 20mm;
+    margin: 20mm 20mm 15mm 20mm;
   }
 
   html {
-    font-size: 9pt;
+    font-size: 9.5pt;
   }
 
   body {
     max-width: 50rem;
+  }
+
+  .print-only {
+    display: inherit;
   }
 
   #content hr {
@@ -422,22 +422,19 @@ div.screenshot > p {
     width: 100%;
     border: none;
     border-top: solid 1px #aaa;
+    margin: 1.2rem 0;
+    padding: 0;
   }
 
   #content {
     margin: 2rem 1rem;
   }
 
-   #content section, #content ul, #content * p {
+  #content section, #content ul, #content * p {
     width: 95%;
     font-size: 0.85rem;
     margin: 0.4rem 0rem 0.4rem 0rem;
     line-height: 140%;
-  }
-
-  #content hr {
-    margin: 0.8rem 0;
-    padding: 0;
   }
 
   #content hr.print-page-break {
@@ -455,6 +452,33 @@ div.screenshot > p {
 
   .item, .client {
     font-size: 0.85rem;
+  }
+
+  #header > div.list > ul {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    flex: inherit;
+  }
+
+  #header > div.list > ul > li {
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    font-weight: 500;
+  }
+
+  #header > div.list > ul > li > a > span.print-only {
+    margin-left: 0.1rem;
+  }
+
+  #header > div.list > ul > li:not(:first-child):not(:last-child)::after {
+    content: '';
+  }
+
+  #header > div.list > ul > li.label {
+    display: none;
+  }
+
+  #header > div.list.resume > ul > li.resume {
+    display: initial;
   }
 
   ul {
@@ -490,10 +514,6 @@ div.screenshot > p {
 
   a:link.item {
     padding-left: 0.4rem;
-  }
-
-  li::before {
-    color: LightGray;
   }
 
 }
