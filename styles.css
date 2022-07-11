@@ -1,3 +1,11 @@
+:root {
+  --print-margin-top: 50mm;
+  --print-margin-right: 20mm;
+  --print-margin-bottom: 50mm;
+  --print-margin-left: 20mm;
+  --print-margin: var(--print-margin-top) var(--print-margin-right) var(--print-margin-bottom) var(--print-margin-left);
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -114,6 +122,10 @@ header {
 #header > p.lmts {
   font-size: 1.0rem;
   margin: 0.5rem;
+}
+
+#header > p.lmts.updated {
+  font-size: 0.95rem;
 }
 
 #header > div.list {
@@ -394,7 +406,15 @@ div.screenshot > p {
 @media print {
   @page {
     size: auto;
-    margin: 20mm 20mm 15mm 20mm;
+    margin: var(--print-margin);
+    margin: 2cm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  @page :first {
+    counter-reset: page;
   }
 
   html {
@@ -407,6 +427,10 @@ div.screenshot > p {
 
   .print-only {
     display: inherit;
+  }
+
+  #content {
+    margin: 2rem 3rem;
   }
 
   #content hr {
@@ -426,8 +450,13 @@ div.screenshot > p {
     padding: 0;
   }
 
-  #content {
-    margin: 2rem 1rem;
+  #content hr.print-page-break {
+    page-break-before: always;
+    break-before: page;
+    height: 0px;
+    border: none;
+    border-top: solid 0px #aaa;
+    margin-bottom: var(--print-margin-bottom);
   }
 
   #content section, #content ul, #content * p {
@@ -435,15 +464,6 @@ div.screenshot > p {
     font-size: 0.85rem;
     margin: 0.4rem 0rem 0.4rem 0rem;
     line-height: 140%;
-  }
-
-  #content hr.print-page-break {
-    page-break-before: always;
-    break-before: always;
-    height: 0px;
-    border: none;
-    border-top: solid 0px #aaa;
-    margin-bottom: 15mm;
   }
 
   .title {
@@ -463,6 +483,7 @@ div.screenshot > p {
   #header > div.list > ul > li {
     margin: 0.2rem 0rem 0.2rem 0rem;
     font-weight: 500;
+    width: 36rem;
   }
 
   #header > div.list > ul > li > a > span.print-only {
