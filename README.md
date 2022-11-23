@@ -3,48 +3,57 @@ stepheneb.github.io
 
 Using gulp, node, and browsersync locally to implement live browser reload and a task for generating pdf of resume.
 
-```
-    $ gulp --tasks
-    Tasks for ~/dev/stepheneb.github.io/gulpfile.esm.js
-    ├─┬ default  Start server and use browsersync to watch files and update pages.
-    │ └─┬ <series>
-    │   ├── serve
-    │   └── watch
-    └── pdf      Generate a PDF of the resume page using applescript and Safari
-```
-
-Enable live reload using gulp and browsersync
-
-```
-    $ gulp
-```
-
 To re-generate resume.pdf after making changes:
 
 ```
-    $ gulp pdf
+    % gulp pdf
 ```
 
 **Local Development Prerequisites**
 
 1. Install nvm: https://github.com/nvm-sh/nvm
 
-2. Use `nvm` to install node v12.14.0.
+2. Install gulp-cli globally: https://gulpjs.com/docs/en/getting-started/quick-start
 
 ```
-    $ nvm install v12.14.0
+% gulp -v
+CLI version: 2.3.0
+Local version: 4.0.2
 ```
-
-3. Install gulp: https://gulpjs.com/docs/en/getting-started/quick-start
-
 
 **Local development**
 
 ```
-    $ git checkout git@github.com:stepheneb/stepheneb.github.io.git
-    $ cd stepheneb.github.io
-    $ npm install
+% git checkout git@github.com:stepheneb/stepheneb.github.io.git
+% cd stepheneb.github.io
+% nvm use
+Found '.nvmrc' with version <lts/gallium>
+Now using node v16.18.0 (npm v8.19.2)
+% npm install
 ```
+
+**Start server and enable live reload using gulp and browsersync**
+
+```
+% gulp
+[11:50:13] Requiring external module esm
+[11:50:14] Using gulpfile ~/dev/00-stepheneb/stepheneb.github.io/gulpfile.esm.js
+[11:50:14] Starting 'default'...
+[11:50:14] Starting 'serve'...
+[11:50:14] Finished 'serve' after 6.08 ms
+[11:50:14] Starting 'watch'...
+[Browsersync] Access URLs:
+--------------------------------------
+    Local: http://localhost:3001
+    External: http://192.168.1.111:3001
+--------------------------------------
+        UI: http://localhost:3002
+UI External: http://localhost:3002
+--------------------------------------
+[Browsersync] Serving files from: ./
+```
+
+**Generate resume.pdf**
 
 
 **Broadcasting with ZeroConf/Bonjour**
@@ -52,7 +61,7 @@ To re-generate resume.pdf after making changes:
 After localserver is started on port 3000 start up `dns-sd`.
 
 ```
-$ dns-sd -P stepheneb _http._tcp . 3000 stepheneb.local `hostname`
+% dns-sd -P stepheneb _http._tcp . 3000 stepheneb.local `hostname`
 Registering Service stepheneb._http._tcp host stepheneb.local port 3000
 DATE: ---Tue 14 Jan 2020---
 12:32:59.162  ...STARTING...
@@ -69,9 +78,9 @@ at this url: http://stepheneb.local:3000
 
     Node is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-    This project is tested using Node v12.14.0.
+    This project is tested using Node lts/gallium (v16.18.0).
 
-    https://nodejs.org/docs/v12.14.0/api/
+    https://nodejs.org/
 
 2. nvm
 
@@ -91,7 +100,7 @@ at this url: http://stepheneb.local:3000
 
     1. Adding **esm** as a development module.
 
-        `$ npm install --save-dev esm`
+        `% npm install --save-dev esm`
 
     2. Adding 'esm' to the name of the Gulpfile, so `gulpfile.js` became `gulpfile.esm.js`.
 
