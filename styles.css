@@ -169,7 +169,7 @@ header {
   margin-left: 0.2rem;
 }
 
-#header > div.list.resume > ul > li.resume {
+#header > div.list.links > ul > li.document {
   display: none;
 }
 
@@ -470,8 +470,8 @@ div.screenshot > p {
     font-size: 0.9rem;
   }
 
-  .item, .client {
-    font-size: 0.85rem;
+  .item, .client, header {
+    font-size: 0.9rem;
   }
 
   #header > div.list > ul {
@@ -498,7 +498,7 @@ div.screenshot > p {
     display: none;
   }
 
-  #header > div.list.resume > ul > li.resume {
+  #header > div.list.links > ul > li.document {
     display: initial;
   }
 

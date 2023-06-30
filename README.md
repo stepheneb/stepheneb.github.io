@@ -53,8 +53,18 @@ UI External: http://localhost:3002
 [Browsersync] Serving files from: ./
 ```
 
-**Generate resume.pdf**
+**Generating PDFs**
 
+First open Safari.
+
+1. resume
+    ```
+    % gulp pdf_resume
+    ```
+2. imaginationandlogic
+    ```
+    % gulp pdf_imaginationandlogic
+    ```
 
 **Broadcasting with ZeroConf/Bonjour**
 
