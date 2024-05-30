@@ -15,6 +15,7 @@
       <h2>Raspberry Pi and Arduino software and hardware development.</h2>
       <p class="lmts">Stephen Bannasch, 106 Sand Hill Road, Shutesbury MA 01072, 413 259 9125</p>
       <p class="lmts">email: <a href="mailto:stephen.bannasch@gmail.com&subject=">stephen.bannasch@gmail.com</a></p>
+      <p class="lmts updated">updated: 2024 05 30</p>
 
       <div class='list links'>
         <ul>
@@ -59,9 +60,19 @@
       <div class="section">
         <div class="item">Custom web application design, implementation, deployment, and scaling specializing in:</div>
         <ul class="details">
+          <li>Rails application development and deployment.</li>
+          <li>Real-time visual collaboration between participants using
+            <a href="https://guides.rubyonrails.org/action_cable_overview.html">Action Cable</a>.</li>
           <li>Interactive data visualizations using <a href="https://d3js.org/">D3.js</a>.</li>
           <li>Interactive computational modeling and visualization.</li>
-          <li>Real-time collaboration between participants.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="item">Arduino and Raspberry Pi development.</div>
+        <ul class="details">
+          <li>Wrote software and designed/built analog and digital I/O for Arduino Mega 2560 controller.</li>
+          <li>Developed Python PID application on Raspberry Pi to control visitor interaction with a model lighthouse.</li>
         </ul>
       </div>
 
@@ -102,7 +113,7 @@
           RLMG is an acclaimed digital design studio specializing in story-driven, interactive, dynamic,
           immersive, and educational installations for public spaces.
         </p>
-        <div class='project'>
+        <div class='project' id="Thoreau's-World-for-the-Concord-Museum">
           <header>Thoreau's World for the Concord Museum, 2021-2022</header>
           <p>
             Created <a href="https://thoreausworld.com/">thoreausworld.com</a>, a web site for displaying Thoreau
@@ -119,13 +130,25 @@
           </div>
         </div>
 
-        <div class='project'>
+        <div class='project' id="Extracted-membership-data-from-a-complex-denormalized-CSV-dump">
           <header>Extracted membership data from a complex denormalized CSV dump into clean SQL, 2021-2022</header>
           <p>
-            Developed an Rails v6.1 application to extract complex membership data from a large
-            denormalized CSV dump. We did not have access to thee original database. Rails was used to re-create
-            a new set of SQL models and extract data from the CSV dump. In addition used the Google Map API
-            to generate location data for member sites.
+            The goal was to extract membership data from a complex denormalized CSV dump into
+            clean SQL. The original database was Microsoft Exchange however the membership organization could only provide access to a denormalized CSV dump.
+          </p>
+          <p>
+            Developed an Rails v6.1 application to extract Rails was used to re-create
+            a new set of SQL models and extract data from the CSV dump. In addition used
+            the Google Map API to generate location data for member site addresses.
+          </p>
+          <p>
+            In order to develop efficiently a yaml cache artifact consisting of a partial set of columns
+            was intermittently generated. This artifact is used by subsequent intermediate stages of importing to generatre additional yaml cache artifacts.
+          </p>
+          <p>
+            The rails model instances and association are created by importing data from the
+            intermediate YAML artifacts. There are a number of rake tasks that manage access
+            to the varipous cache artifacts, column mapping, and geocoding.
           </p>
           <ul class="details">
             <li>
@@ -134,7 +157,7 @@
           </ul>
         </div>
 
-        <div class='project'>
+        <div class='project'id="Electron-based-kiosk-application-for-interacting-with-NASA-images">
           <header>Electron-based kiosk application for interacting with NASA images, 2019-2022</header>
           <p>
             Worked with a designer at RLMG and content experts and a systems programmer at the Harvard Center for Astrophysics
@@ -143,13 +166,13 @@
           </p>
           <ul class="details">
             <li>
-              Repository: <a href="https://github.com/stepheneb/cfa-own-electron">github.com/stepheneb/cfa-own-electron</a>
+              Repository: <a href="https://github.com/stepheneb/cfa-own-electron">github.com/stepheneb/cfa-own-electron</a> <b>NOTE:</b> The main repository is now private.
             </li>
             <li>
-              Web demo: <a href="https://stepheneb.github.io/cfa-own-electron">stepheneb.github.io/cfa-own-electron</a>
+              More info: <a href="https://learnmaketeachshare.org/creating%20with%20software/2022/07/15/cfa-owns-electron.html">learnmaketeachshare.org/creating%20with%20software/2022/07/15/cfa-owns-electron.html</a>
             </li>
             <li>
-              Releases: <a href="https://github.com/stepheneb/cfa-own-electron/releases">github.com/stepheneb/cfa-own-electron/releases</a>
+              Web demo: <a href="https://stepheneb.github.io/cfa-own-electron-gh-pages/">sstepheneb.github.io/cfa-own-electron-gh-pages</a>
             </li>
           </ul>
           <div class="screenshot">
@@ -277,7 +300,7 @@
           tools for architecting and implementing these systems.
         </p>
 
-        <div class='project'>
+        <div class='project' id"Raspberry-Pi-project-involving-video-playback-and-digital-IO<"">
           <header>2020, Raspberry Pi project involving video playback and digital I/O</header>
           <ul class="details">
             <li>
@@ -289,7 +312,7 @@
           </ul>
         </div>
 
-        <div class='project'>
+        <div class='project' id="Electron-application-for-dynamic-visualization-of-remote-application-events">
           <header>2020, Prototype Electron application for dynamic visualization of remote application events</header>
           <ul class="details">
             <li>
@@ -302,7 +325,7 @@
           </ul>
         </div>
 
-        <div class='project'>
+        <div class='project' id="networked-virtual-reality-communication-and-scene-building">
           <header>2018-2019, Prototype networked virtual reality communication and scene-building</header>
           <p>
             Created prototype applications in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>
@@ -319,7 +342,7 @@
           </ul>
         </div>
 
-        <div class='project'>
+        <div class='project' id="Updated-legacy-Java-Swing-application-to-build-and-run-in-Eclipse-IDE-and-recent-Java-release">
           <header>2019, Updated legacy Java Swing application to build and run in Eclipse IDE and recent Java release</header>
           <ul class="details">
             <li>
