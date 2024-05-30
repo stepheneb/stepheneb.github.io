@@ -17,7 +17,7 @@ To re-generate resume.pdf after making changes:
 
 ```
 % gulp -v
-CLI version: 2.3.0
+CLI version: 3.0.0
 Local version: 4.0.2
 ```
 
@@ -27,8 +27,8 @@ Local version: 4.0.2
 % git checkout git@github.com:stepheneb/stepheneb.github.io.git
 % cd stepheneb.github.io
 % nvm use
-Found '.nvmrc' with version <lts/gallium>
-Now using node v16.18.0 (npm v8.19.2)
+Found '/Users/stephen/dev/00-stepheneb/stepheneb.github.io/.nvmrc' with version <lts/hydrogen>
+Now using node v18.16.0 (npm v9.5.1)
 % npm install
 ```
 
